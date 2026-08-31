@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login - LifeLink Blood Bank</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-box">
+
+        <div class="login-logo">
+            
+        </div>
+
+        <h1>LifeLink</h1>
+
+        <p>
+            Blood Bank Management System
+        </p>
+
+        <form onsubmit="loginUser(event)">
+
+            <label>Username</label>
+
+            <input
+                type="text"
+                placeholder="Enter username"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <button
+                type="submit"
+                class="btn">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <a
+            href="registration.html"
+            class="register-link">
+
+            New User? Register Here
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function loginUser(event) {
+
+    event.preventDefault();
+
+    alert("Login Successful!");
+
+    window.location.href = "index.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

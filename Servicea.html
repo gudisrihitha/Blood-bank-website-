@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Services - LifeLink</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<nav>
+
+    <a href="index.html" class="logo">
+         LifeLink Blood Bank
+    </a>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<div class="page-banner">
+
+    <h1>Our Services & Products</h1>
+
+    <p>
+        Explore our blood bank services
+    </p>
+
+</div>
+
+
+
+<section>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon"></div>
+
+            <h3>Blood Donation</h3>
+
+            <p>
+                Register and become a
+                voluntary blood donor.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="icon"> </div>
+
+            <h3>Blood Products</h3>
+
+            <p>
+                Whole Blood, Plasma,
+                Platelets and Red Blood Cells.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="icon"> </div>
+
+            <h3>Blood Enquiry</h3>
+
+            <p>
+                Enquire about required
+                blood groups and products.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="icon"></div>
+
+            <h3>Emergency Support</h3>
+
+            <p>
+                Contact our team for
+                emergency information.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <div class="form-container">
+
+        <div class="form-box">
+
+            <h2>
+                Blood Product Enquiry Form
+            </h2>
+
+
+            <form onsubmit="submitEnquiry(event)">
+
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter email"
+                    required
+                >
+
+
+                <label>
+                    Required Blood Group
+                </label>
+
+                <select required>
+
+                    <option value="">
+                        Select Blood Group
+                    </option>
+
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+
+                </select>
+
+
+                <label>Blood Product</label>
+
+                <select>
+
+                    <option>
+                        Whole Blood
+                    </option>
+
+                    <option>
+                        Red Blood Cells
+                    </option>
+
+                    <option>
+                        Plasma
+                    </option>
+
+                    <option>
+                        Platelets
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Enquiry Message
+                </label>
+
+                <textarea
+                    placeholder="Write your enquiry"
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Submit Enquiry
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+function submitEnquiry(event) {
+
+    event.preventDefault();
+
+    alert("Your enquiry has been submitted!");
+
+    event.target.reset();
+
+}
+
+</script>
+
+
+
+<footer>
+
+     2026 LifeLink Blood Bank Management System
+
+</footer>
+
+
+</body>
+
+</html>

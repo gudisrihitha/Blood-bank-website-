@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - LifeLink</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<nav>
+
+    <a href="index.html" class="logo">
+         LifeLink Blood Bank
+    </a>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<div class="page-banner">
+
+    <h1>Contact Us & Feedback</h1>
+
+    <p>
+        Get in touch with us
+    </p>
+
+</div>
+
+
+
+<section>
+
+
+    <div class="contact-info">
+
+
+        <div class="contact-card">
+
+            <h3> Address</h3>
+
+            <p>
+                Hyderabad, Telangana
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+            <h3> Phone</h3>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+            <h3>📧 Email</h3>
+
+            <p>
+                lifelink@gmail.com
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+            <h3>⏰ Support</h3>
+
+            <p>
+                24 Hours Available
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="form-container">
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="form-box">
+
+            <h2>Contact Form</h2>
+
+
+            <form onsubmit="contactMessage(event)">
+
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Phone Number</label>
+
+                <input
+                    type="tel"
+                    placeholder="Enter phone number"
+                >
+
+
+                <label>Message</label>
+
+                <textarea
+                    placeholder="Write your message"
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Send Message
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- FEEDBACK FORM -->
+
+        <div class="form-box">
+
+            <h2>Feedback Form</h2>
+
+
+            <form onsubmit="feedbackMessage(event)">
+
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>
+                    Rate Our Service
+                </label>
+
+                <select>
+
+                    <option>
+                        Excellent
+                    </option>
+
+                    <option>
+                        Good
+                    </option>
+
+                    <option>
+                        Average
+                    </option>
+
+                    <option>
+                        Poor
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Your Feedback
+                </label>
+
+                <textarea
+                    placeholder="Write your feedback"
+                    required>
+                </textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Submit Feedback
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<script>
+
+function contactMessage(event) {
+
+    event.preventDefault();
+
+    alert("Your message has been sent!");
+
+    event.target.reset();
+
+}
+
+
+function feedbackMessage(event) {
+
+    event.preventDefault();
+
+    alert("Thank you for your feedback!");
+
+    event.target.reset();
+
+}
+
+</script>
+
+
+
+<footer>
+
+    © 2026 LifeLink Blood Bank Management System
+
+</footer>
+
+
+</body>
+
+</html>
